@@ -1,0 +1,103 @@
+:root {
+    --background: #ffffff;
+    --foreground: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    background: var(--background);
+    z-index: 100;
+}
+
+.header__logo {
+    width: 230px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    gap: 16px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+.header__nav-item--button {
+    padding: 4px 16px;
+    border: solid var(--foreground) 1px;
+    border-radius: 8px;
+}
+
+.pinterest-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    padding-top: 90px;
+}
+
+.pinterest-feed__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.who-i-am {
+    padding: 200px 20px;
+    margin-top: -80px;
+    background: var(--background);
+    background: url("./assets/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+}
+
+.who-i-am__content {
+    width: 50%;
+}
+
+.who-i-am__title {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.who-i-am__description {
+    font-size: 24px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+    gap: 16px;
+    padding: 20px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--foreground);
+}
